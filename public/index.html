@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zephyr Ice · Handcrafted Hawaiian Shave Ice · Portland, Maine</title>
+<meta name="description" content="Hawaiian-style shave ice over homemade ice cream, with fruit syrups made from scratch. West End shop at 129 Spring St and the cart on the Eastern Prom in Portland, Maine.">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zephyr Ice · Handcrafted Shave Ice in Portland, Maine">
+<meta property="og:description" content="Ice cream on the bottom. Soft, fluffy ice on top. Real-fruit syrups all the way through.">
+<meta property="og:image" content="/img/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12324d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "IceCreamShop",
+  "name": "Zephyr Ice",
+  "description": "Handcrafted Hawaiian-style shave ice over homemade ice cream, with fruit syrups made from scratch.",
+  "telephone": "+1-774-249-0012",
+  "address": { "@type": "PostalAddress", "streetAddress": "129 Spring St", "addressLocality": "Portland", "addressRegion": "ME", "postalCode": "04101", "addressCountry": "US" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "15:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "14:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "13:00", "closes": "18:00" }
+  ],
+  "servesCuisine": ["Shave ice", "Ice cream", "Desserts"],
+  "sameAs": ["https://www.instagram.com/zephyr_ice", "https://www.facebook.com/zephyricemaine"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top" aria-label="Zephyr Ice home">
+    <img src="/img/logo.png" alt="" onerror="this.remove()">
+    <span class="word">Zephyr<em>Ice</em></span>
+  </a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="#build">Build a cup</a>
+    <a href="#story">Our story</a>
+    <a href="#find">Find us</a>
+    <a href="#feed">Fresh posts</a>
+    <a href="#cart">Book the cart</a>
+  </nav>
+  <div class="nav-right">
+    <a class="soc" href="https://www.instagram.com/zephyr_ice" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+    <a class="soc" href="https://www.facebook.com/zephyricemaine" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+    <a class="btn btn-ink call" href="tel:+17742490012">Call</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wind" aria-hidden="true">
+      <svg viewBox="0 0 1200 400" preserveAspectRatio="none"><path d="M-50 120 C 200 60, 350 180, 600 110 S 1000 40, 1250 120"/><path d="M-50 260 C 250 200, 420 320, 700 250 S 1050 190, 1250 270"/><path d="M-50 360 C 300 320, 520 400, 820 350 S 1100 300, 1250 360"/></svg>
+    </div>
+    <div class="hero-copy">
+      <p class="open-pill" id="openPill"><span class="dot"></span><span id="openText">Portland, Maine · open year round</span></p>
+      <h1>Hawaiian shave&nbsp;ice,<br><span class="swash">made from scratch</span> in Maine.</h1>
+      <p class="lede">Homemade ice cream on the bottom. Soft, fluffy snow on top. Fruit syrups we cook ourselves from real fruit, soaking all the way through.</p>
+      <div class="cta-row">
+        <a class="btn btn-pink" href="#build">Build your cup</a>
+        <a class="btn btn-line" href="#find">Get directions</a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>West End shop</b>129 Spring St</li>
+        <li><b>The cart</b>Eastern Prom</li>
+        <li><b>Vegan base</b>Coconut ice cream</li>
+      </ul>
+    </div>
+    <div class="hero-cup" aria-hidden="true">
+      <div class="sun"></div>
+      <div id="heroCup"></div>
+      <p class="hero-label" id="heroLabel">POG over macadamia nut</p>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="ticker-wrap" aria-hidden="true"><div class="ticker">
+    <div class="ticker-track">
+      <span>Macadamia nut ice cream</span><i>✺</i><span>Mint lime</span><i>✺</i><span>Snow cap</span><i>✺</i><span>Toasted coconut</span><i>✺</i><span>Passion · orange · guava</span><i>✺</i><span>Cucumber</span><i>✺</i><span>Plum powder</span><i>✺</i><span>Banana</span><i>✺</i>
+      <span>Macadamia nut ice cream</span><i>✺</i><span>Mint lime</span><i>✺</i><span>Snow cap</span><i>✺</i><span>Toasted coconut</span><i>✺</i><span>Passion · orange · guava</span><i>✺</i><span>Cucumber</span><i>✺</i><span>Plum powder</span><i>✺</i><span>Banana</span><i>✺</i>
+    </div>
+  </div></div>
+
+  <!-- BUILDER -->
+  <section class="build" id="build">
+    <div class="section-head">
+      <p class="kicker">Anatomy of a Zephyr</p>
+      <h2>Build your cup before you even get here.</h2>
+      <p>Pick a base, stack up to three syrups, finish it off. Then show this screen at the window — or just point.</p>
+    </div>
+
+    <div class="builder">
+      <div class="builder-visual">
+        <div id="buildCup"></div>
+        <div class="order-card">
+          <p class="order-title">Your Zephyr</p>
+          <p class="order-line" id="orderLine">—</p>
+          <button class="btn btn-ink small" id="shareBtn" type="button">Copy my order</button>
+        </div>
+      </div>
+
+      <div class="builder-steps">
+        <fieldset class="layer">
+          <legend><span class="chip chip-cream">Base</span> Homemade ice cream on the bottom</legend>
+          <div class="opts" id="optBase"></div>
+        </fieldset>
+        <fieldset class="layer">
+          <legend><span class="chip chip-blue">Syrups</span> Pick up to three <small>(lineup rotates — check our posts for today's)</small></legend>
+          <div class="opts" id="optSyrup"></div>
+        </fieldset>
+        <fieldset class="layer">
+          <legend><span class="chip chip-pink">Finish</span> Toppings</legend>
+          <div class="opts" id="optTop"></div>
+        </fieldset>
+        <p class="fine">Flavors and toppings change with the season and what fruit is good. Ask at the window about specials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="story-photos">
+      <figure class="ph ph-tall" style="--hue:#ffd2dd"><img src="/img/story-1.jpg" alt="Julie and Don Martin, owners of Zephyr Ice" onerror="this.remove()"><figcaption>Julie &amp; Don</figcaption></figure>
+      <figure class="ph ph-sq" style="--hue:#cdeeff"><img src="/img/story-2.jpg" alt="Shave ice being made at Zephyr Ice" onerror="this.remove()"><figcaption>Fresh-shaved</figcaption></figure>
+      <span class="stamp">Since<br><b>2020</b></span>
+    </div>
+    <div class="story-copy">
+      <p class="kicker">How a trip to Hawaii ended up on Spring Street</p>
+      <h2>It started with one cup that blew our minds.</h2>
+      <p>In 2017, Julie and Don Martin tried shave ice for the first time on a trip to Hawaii — ice cream in the bottom, soft fluffy ice, fruit syrups on top. They came home, bought an ice shaver, and started making it in their own kitchen.</p>
+      <p>Don grew up making ice cream with his family and was set on recreating that macadamia nut. Twenty-plus years behind a bar turned out to be the perfect training for building syrups from real fruit. And Maine? Maine didn't have anything like it.</p>
+      <p>So in 2020 they rolled out a cart. In 2021 they signed the lease on the West End shop. They've been shaving snow in Portland ever since — winter included.</p>
+      <p class="sig">— Julie &amp; Don</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" aria-label="Photos">
+    <figure class="ph" style="--hue:#ffe3b0"><img src="/img/gallery-1.jpg" alt="A rainbow shave ice from Zephyr Ice" onerror="this.remove()"><figcaption>Syrup rainbow</figcaption></figure>
+    <figure class="ph" style="--hue:#d7f3cf"><img src="/img/gallery-2.jpg" alt="Mint lime shave ice" onerror="this.remove()"><figcaption>Mint lime</figcaption></figure>
+    <figure class="ph ph-wide" style="--hue:#cdeeff"><img src="/img/gallery-3.jpg" alt="The Zephyr Ice cart on the Eastern Promenade" onerror="this.remove()"><figcaption>The cart on the Prom</figcaption></figure>
+    <figure class="ph" style="--hue:#ffd2dd"><img src="/img/gallery-4.jpg" alt="Shave ice with snow cap" onerror="this.remove()"><figcaption>Snow cap</figcaption></figure>
+    <figure class="ph ph-wide" style="--hue:#efe4ff"><img src="/img/gallery-5.jpg" alt="The Zephyr Ice shop on Spring Street" onerror="this.remove()"><figcaption>129 Spring St</figcaption></figure>
+  </section>
+
+  <!-- FIND US -->
+  <section class="find" id="find">
+    <div class="section-head">
+      <p class="kicker">Two ways to get a cup</p>
+      <h2>Find us.</h2>
+    </div>
+    <div class="spots">
+      <article class="spot">
+        <span class="spot-tag">The shop</span>
+        <h3>West End</h3>
+        <p class="addr">129 Spring St<br>Portland, ME 04101</p>
+        <table class="hours" id="hours">
+          <tr data-d="3,4,5"><th>Wed – Fri</th><td>3 – 9 pm</td></tr>
+          <tr data-d="6"><th>Saturday</th><td>2 – 9 pm</td></tr>
+          <tr data-d="0"><th>Sunday</th><td>1 – 6 pm</td></tr>
+          <tr data-d="1,2"><th>Mon – Tue</th><td>Closed</td></tr>
+        </table>
+        <p class="fine">Open year round. Hours can shift with the weather — our latest post always has today's.</p>
+        <div class="spot-ctas">
+          <a class="btn btn-ink small" href="https://maps.google.com/?q=Zephyr+Ice+129+Spring+St+Portland+ME" target="_blank" rel="noopener">Directions</a>
+          <a class="btn btn-line small" href="tel:+17742490012">(774) 249-0012</a>
+        </div>
+      </article>
+      <article class="spot spot-cart">
+        <span class="spot-tag">The cart</span>
+        <h3>Eastern Prom</h3>
+        <p class="addr">Out on the Eastern Promenade<br>when the weather's right</p>
+        <p>Same scratch syrups, same homemade ice cream, with a view of Casco Bay. Cart days are posted on Instagram and Facebook — follow along so you don't miss it.</p>
+        <div class="spot-ctas">
+          <a class="btn btn-pink small" href="https://www.instagram.com/zephyr_ice" target="_blank" rel="noopener">Cart days on Instagram</a>
+          <a class="btn btn-line small" href="#cart">Book it for an event</a>
+        </div>
+      </article>
+      <div class="map">
+        <iframe title="Map to Zephyr Ice, 129 Spring St, Portland ME" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=129%20Spring%20St%2C%20Portland%2C%20ME%2004101&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEED -->
+  <section class="feed" id="feed">
+    <div class="feed-copy">
+      <p class="kicker">Straight from the window</p>
+      <h2>Today's flavors, specials &amp; cart days.</h2>
+      <p>We post what's on the board, new syrups, and where the cart is headed. This feed updates on its own every time we post.</p>
+      <div class="soc-big">
+        <a href="https://www.instagram.com/zephyr_ice" target="_blank" rel="noopener" class="soc-card ig">
+          <svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>
+          <span><b>@zephyr_ice</b>Follow on Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/zephyricemaine" target="_blank" rel="noopener" class="soc-card fb">
+          <svg viewBox="0 0 24 24"><use href="#i-fb"/></svg>
+          <span><b>Zephyr Ice</b>Like on Facebook</span>
+        </a>
+      </div>
+    </div>
+    <div class="fb-frame">
+      <iframe id="fbFeed" title="Zephyr Ice Facebook posts" loading="lazy" allow="encrypted-media" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzephyricemaine&tabs=timeline&width=WIDTH&height=620&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"></iframe>
+    </div>
+  </section>
+
+  <!-- CART BOOKING -->
+  <section class="cart" id="cart">
+    <div class="cart-copy">
+      <p class="kicker">Parties · weddings · work events · block parties</p>
+      <h2>Bring the shave ice to you.</h2>
+      <p>Tell us a little about your event and we'll get back to you about bringing the Zephyr cart. Not booking anything? Use the other tab to just say hi.</p>
+      <ul class="ticks">
+        <li>Homemade ice cream &amp; scratch syrups, made fresh</li>
+        <li>Vegan coconut base available</li>
+        <li>We reply by phone or email — your pick</li>
+      </ul>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" class="tab on" data-kind="cart" aria-selected="true">Book the cart</button>
+        <button type="button" role="tab" class="tab" data-kind="hello" aria-selected="false">Say hi</button>
+      </div>
+      <input type="hidden" name="kind" value="cart">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="row">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+      </div>
+      <div class="row two">
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <div class="row two cart-only">
+        <label>Event date<input name="event_date" type="date"></label>
+        <label>About how many people?
+          <select name="guests">
+            <option value="">Choose…</option>
+            <option>Under 50</option><option>50 – 100</option><option>100 – 200</option><option>200+</option><option>Not sure yet</option>
+          </select>
+        </label>
+      </div>
+      <div class="row cart-only">
+        <label>Where's the event?<input name="location" placeholder="Town or venue"></label>
+      </div>
+      <div class="row">
+        <label><span id="msgLabel">Anything else we should know?</span><textarea name="message" rows="4"></textarea></label>
+      </div>
+      <button class="btn btn-pink wide" type="submit" id="sendBtn">Send request</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div>
+      <p class="foot-word">Zephyr<em>Ice</em></p>
+      <p>Handcrafted Hawaiian-style shave ice.<br>Made from scratch in Portland, Maine.</p>
+      <div class="foot-soc">
+        <a class="soc" href="https://www.instagram.com/zephyr_ice" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a class="soc" href="https://www.facebook.com/zephyricemaine" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <p class="foot-h">Shop</p>
+      <p>129 Spring St<br>Portland, ME 04101<br><a href="tel:+17742490012">(774) 249-0012</a></p>
+    </div>
+    <div>
+      <p class="foot-h">Hours</p>
+      <p>Wed – Fri 3 – 9<br>Sat 2 – 9 · Sun 1 – 6<br>Mon – Tue closed</p>
+    </div>
+  </div>
+  <div class="foot-bar">
+    <span>© <span id="yr"></span> Zephyr Ice</span>
+    <a class="credit" href="https://getrealeasysites.com" target="_blank" rel="noopener">Website by Real Easy Sites</a>
+  </div>
+</footer>
+
+<a class="float-call" href="tel:+17742490012" aria-label="Call Zephyr Ice">📞</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.6 1.3 16 1.2C14.3 1.1 9.7 1.1 8 1.2c-1.6.1-3 .4-4.2 1.6S2.2 5.5 2.1 7.1C2 8.8 2 13.2 2.1 14.9c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.3.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.1.2-7.8zM19.7 18.6a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.9.4s-4.6.1-5.9-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.6s-.1-4.3.4-5.6a3.2 3.2 0 0 1 1.8-1.8C7.4 5.1 10.4 5.2 12 5.2s4.6-.1 5.9.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.6s.1 4.3-.4 5.6z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></symbol>
+</svg>
+
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zephyr Ice · Sign in</title>
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body class="login">
+  <form class="login-card" method="post" action="/admin/login">
+    <div class="mark">🍧</div>
+    <h1>Zephyr Ice</h1>
+    <p class="sub">Requests dashboard</p>
+    <p class="err" id="err" hidden></p>
+    <label for="pw">Password</label>
+    <input id="pw" name="password" type="password" autocomplete="current-password" required autofocus>
+    <button type="submit">Sign in</button>
+  </form>
+  <script>
+    const e = new URLSearchParams(location.search).get('e');
+    const el = document.getElementById('err');
+    if (e) {
+      el.hidden = false;
+      el.textContent = e === 'off'
+        ? 'Login is turned off until ADMIN_PASSWORD is set on the server.'
+        : 'That password didn’t match. Try again.';
+    }
+  </script>
+</body>
+</html>

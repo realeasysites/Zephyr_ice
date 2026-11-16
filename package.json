@@ -1,0 +1,20 @@
+{
+  "name": "zephyr-ice",
+  "version": "1.0.0",
+  "description": "Zephyr Ice — handcrafted shave ice, Portland ME. Site + lead dashboard by Real Easy Sites.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.15"
+  }
+}
