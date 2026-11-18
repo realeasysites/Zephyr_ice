@@ -6,10 +6,12 @@
     { id: 'coco', name: 'Coconut', color: '#fbfaf3', vegan: true },
   ];
   const SYRUPS = [
-    { id: 'pog', name: 'P.O.G.', note: 'passion · orange · guava', color: '#ff8a3d' },
+    { id: 'pog', name: 'P.O.G.', color: '#ff8a3d' },
+    { id: 'passion', name: 'Passion fruit', color: '#f7b52c' },
+    { id: 'raspberry', name: 'Raspberry', color: '#d63a5e' },
+    { id: 'strawberry', name: 'Strawberry', color: '#ef4b4b' },
+    { id: 'guava', name: 'Guava', color: '#f48a8a' },
     { id: 'mintlime', name: 'Mint lime', color: '#8fd65e' },
-    { id: 'cucumber', name: 'Cucumber', color: '#c8ee9f' },
-    { id: 'orange', name: 'Orange', color: '#ffa529' },
     { id: 'banana', name: 'Banana', color: '#ffe066' },
     { id: 'coconut', name: 'Coconut', color: '#f3ede2' },
   ];
@@ -84,29 +86,6 @@
     const bands = cols.length === 1 ? [cols[0], cols[0], cols[0]] : cols.length === 2 ? [cols[0], cols[1], cols[1]] : cols;
     bands.forEach((c, i) => document.getElementById(`${p}-s${i}`)?.setAttribute('fill', c));
     TOPS.forEach((t) => document.getElementById(`${p}-${t.id}`)?.classList.toggle('off', !tops.some((x) => x.id === t.id)));
-  }
-
-  /* ---------- Hero cup: cycles through combos ---------- */
-  const hero = document.getElementById('heroCup');
-  const heroLabel = document.getElementById('heroLabel');
-  if (hero) {
-    hero.innerHTML = cupSVG('h');
-    const pick = (arr, ids) => ids.map((id) => arr.find((x) => x.id === id));
-    const combos = [
-      { b: 'mac', s: ['pog'], t: ['cap'], label: 'P.O.G. over macadamia nut' },
-      { b: 'coco', s: ['mintlime', 'cucumber'], t: ['cap', 'toast'], label: 'Mint lime + cucumber, vegan coconut' },
-      { b: 'van', s: ['banana', 'coconut', 'orange'], t: [], label: 'Banana, coconut & orange on vanilla' },
-      { b: 'mac', s: ['orange', 'mintlime'], t: ['plum'], label: 'Orange + mint lime, plum powder' },
-    ];
-    let i = 0;
-    const show = () => {
-      const c = combos[i % combos.length];
-      paint('h', BASES.find((x) => x.id === c.b), pick(SYRUPS, c.s), pick(TOPS, c.t));
-      heroLabel.textContent = c.label;
-      i++;
-    };
-    show();
-    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(show, 3200);
   }
 
   /* ---------- Builder ---------- */
