@@ -24,13 +24,16 @@ ADMIN_PASSWORD=pick-one npm start   # http://localhost:3000
 | `NOTIFY_EMAIL` | optional | Inbox that gets an email for each new request. |
 | `SMTP_HOST` / `SMTP_PORT` / `SMTP_USER` / `SMTP_PASS` / `SMTP_FROM` | optional | Email sending (e.g. Gmail app password). |
 
-## Photos — drop these into `public/img/`
+## Photos (`public/img/`)
 
-Every slot shows a soft color card until its file exists, then the photo appears automatically.
+All real Zephyr Ice photos from their Instagram, supplied Nov 2026.
 
 | File | Where it shows |
 |---|---|
-| `logo.png` | Header logo + social share (OG) image |
-| `story-1.jpg` | Our story, tall photo (Julie & Don) |
-| `story-2.jpg` | Our story, square photo (making the ice) |
-| `gallery-1.jpg` … `gallery-5.jpg` | Photo strip (5 = the shop, 3 = the cart, wide) |
+| `logo.png` | Header logo + hero badge (transparent background) |
+| `og.jpg` | Social share image (logo on white) |
+| `hero.jpg` | Hero arch photo |
+| `story-1.jpg` / `story-2.jpg` | Our story (shop mural, inside the shop) |
+| `gallery-1.jpg` … `gallery-8.jpg` | Photo wall |
+
+To swap a photo, replace the file with the same name. Still wanted: Julie & Don, the cart on the Prom.

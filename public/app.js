@@ -44,17 +44,17 @@
     <clipPath id="${p}-cup"><path d="M64 206 L236 206 L215 338 Q150 350 85 338 Z"/></clipPath>
     <linearGradient id="${p}-shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
   </defs>
-  <ellipse cx="150" cy="346" rx="92" ry="9" fill="#12324d" opacity=".12"/>
+  <ellipse cx="150" cy="346" rx="92" ry="9" fill="#1f5664" opacity=".12"/>
   <!-- cup -->
-  <path d="M64 206 L236 206 L215 338 Q150 350 85 338 Z" fill="#fff" stroke="#12324d" stroke-width="3"/>
+  <path d="M64 206 L236 206 L215 338 Q150 350 85 338 Z" fill="#fff" stroke="#1f5664" stroke-width="3"/>
   <g clip-path="url(#${p}-cup)">
-    <rect x="40" y="262" width="220" height="16" fill="#ff5d8f"/>
-    <rect x="40" y="284" width="220" height="6" fill="#2bb3e0"/>
+    <rect x="40" y="262" width="220" height="16" fill="#d12d86"/>
+    <rect x="40" y="284" width="220" height="6" fill="#357485"/>
   </g>
-  <text x="150" y="250" text-anchor="middle" font-family="Bricolage Grotesque, system-ui" font-weight="800" font-size="27" fill="#12324d" letter-spacing="1">ZEPHYR</text>
-  <text x="150" y="320" text-anchor="middle" font-family="Caveat, cursive" font-size="17" fill="#12324d" opacity=".8">shave ice · portland me</text>
+  <text x="150" y="250" text-anchor="middle" font-family="Bricolage Grotesque, system-ui" font-weight="800" font-size="27" fill="#1f5664" letter-spacing="1">ZEPHYR</text>
+  <text x="150" y="320" text-anchor="middle" font-family="Caveat, cursive" font-size="17" fill="#1f5664" opacity=".8">shave ice · portland me</text>
   <!-- ice cream base -->
-  <ellipse class="cup-base" id="${p}-base" cx="150" cy="204" rx="90" ry="15" fill="#e8c993" stroke="#12324d" stroke-width="3"/>
+  <ellipse class="cup-base" id="${p}-base" cx="150" cy="204" rx="90" ry="15" fill="#e8c993" stroke="#1f5664" stroke-width="3"/>
   <!-- shaved ice dome with syrup bands -->
   <g clip-path="url(#${p}-dome)">
     <rect x="30" y="50" width="240" height="160" fill="#f6fbff"/>
@@ -66,14 +66,14 @@
     ${dots}
     <rect x="30" y="50" width="240" height="160" fill="url(#${p}-shine)"/>
   </g>
-  <path d="M58 202 C 50 66, 250 66, 242 202" fill="none" stroke="#12324d" stroke-width="3"/>
+  <path d="M58 202 C 50 66, 250 66, 242 202" fill="none" stroke="#1f5664" stroke-width="3"/>
   <!-- toppings -->
-  <path class="topping" id="${p}-cap" d="M86 124 C 96 92, 204 92, 214 124 Q 206 140 196 128 Q 186 150 172 132 Q 160 154 146 134 Q 132 152 120 132 Q 106 146 100 128 Q 92 138 86 124 Z" fill="#fffdf6" stroke="#12324d" stroke-width="2.5"/>
+  <path class="topping" id="${p}-cap" d="M86 124 C 96 92, 204 92, 214 124 Q 206 140 196 128 Q 186 150 172 132 Q 160 154 146 134 Q 132 152 120 132 Q 106 146 100 128 Q 92 138 86 124 Z" fill="#fffdf6" stroke="#1f5664" stroke-width="2.5"/>
   <g class="topping" id="${p}-toast">${flakes}</g>
   <g class="topping" id="${p}-plum">${plum}</g>
   <!-- spoon -->
-  <path d="M206 98 L240 30" stroke="#12324d" stroke-width="5" stroke-linecap="round"/>
-  <ellipse cx="243" cy="24" rx="9" ry="13" transform="rotate(28 243 24)" fill="#ff5d8f" stroke="#12324d" stroke-width="3"/>
+  <path d="M206 98 L240 30" stroke="#1f5664" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="243" cy="24" rx="9" ry="13" transform="rotate(28 243 24)" fill="#d12d86" stroke="#1f5664" stroke-width="3"/>
 </svg>`;
   }
 
