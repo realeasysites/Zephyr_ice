@@ -40,7 +40,7 @@
       plum += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="1.6" fill="#a8383a" opacity=".85"/>`;
     }
     return `
-<svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a shave ice cup">
+<svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a shaved ice cup">
   <defs>
     <clipPath id="${p}-dome"><path d="M58 202 C 50 66, 250 66, 242 202 Z"/></clipPath>
     <clipPath id="${p}-cup"><path d="M64 206 L236 206 L215 338 Q150 350 85 338 Z"/></clipPath>
@@ -54,7 +54,7 @@
     <rect x="40" y="284" width="220" height="6" fill="#357485"/>
   </g>
   <text x="150" y="250" text-anchor="middle" font-family="Bricolage Grotesque, system-ui" font-weight="800" font-size="27" fill="#1f5664" letter-spacing="1">ZEPHYR</text>
-  <text x="150" y="320" text-anchor="middle" font-family="Caveat, cursive" font-size="17" fill="#1f5664" opacity=".8">shave ice · portland me</text>
+  <text x="150" y="320" text-anchor="middle" font-family="Caveat, cursive" font-size="15" fill="#1f5664" opacity=".8">shaved ice · portland me</text>
   <!-- ice cream base -->
   <ellipse class="cup-base" id="${p}-base" cx="150" cy="204" rx="90" ry="15" fill="#e8c993" stroke="#1f5664" stroke-width="3"/>
   <!-- shaved ice dome with syrup bands -->
