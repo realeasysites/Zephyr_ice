@@ -1,6 +1,6 @@
 # Zephyr Ice — website
 
-Handcrafted Hawaiian shave ice · 129 Spring St, Portland, ME · built by [Real Easy Sites](https://getrealeasysites.com).
+Handcrafted shave ice & ice cream · 129 Spring St, Portland, ME · built by [Real Easy Sites](https://getrealeasysites.com).
 
 Node 20 + Express + SQLite. One-page site with a "build your cup" flavor builder, live Facebook feed, cart/event booking form, and a password-only requests dashboard at `/admin`.
 
